@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhaojiajia.newstudy.TeacherView">
+
+    <LinearLayout
+        android:id="@+id/teacher_imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSkyblue"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/teacher"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/teacherlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_imageLayout"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/teachername"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teachernames"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/teachername"
+            android:gravity="center"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teachersex"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/teachername"
+            android:gravity="center"
+            android:text="@string/sex"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teachersexs"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/teachersex"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/teachersex"
+            android:gravity="center"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teacherage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/teachersex"
+            android:gravity="center"
+            android:text="@string/age"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teacherages"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/teacherage"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/teacherage"
+            android:gravity="center"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/teachermessage"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/teacherlayout"
+        android:gravity="center"
+        android:text="@string/teachermessage"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/teachermessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/teacherlayout"
+        android:layout_toEndOf="@id/teachermessage"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorSkyblue"
+        android:textSize="20sp" />
+</RelativeLayout>

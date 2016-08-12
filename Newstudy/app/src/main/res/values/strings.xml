@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Newstudy</string>
+    <string name="xxkc">选修课程</string>
+    <string name="name">姓名：</string>
+    <string name="sex">性别：</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="age">年龄：</string>
+    <string name="submit">提交信息</string>
+    <string name="select">请选择你要选修的课程编号</string>
+    <string name="teacher">任课老师资料</string>
+    <string name="teachermessage">任课老师资历</string>
+    <string name="num">编号</string>
+    <string name="teachername">任课老师</string>
+    <string name="coursename">科目</string>
+    <string name="stunum">当前人数</string>
+    <string name="maxnum">招生数</string>
+    <string name="names">姓名</string>
+    <string name="sexs">性别</string>
+    <string name="ages">年龄</string>
+</resources>

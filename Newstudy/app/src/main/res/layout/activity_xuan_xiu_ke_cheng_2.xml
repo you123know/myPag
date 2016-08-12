@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhaojiajia.newstudy.XuanXiuKeCheng_2">
+
+    <LinearLayout
+        android:id="@+id/xxkc2_imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSkyblue"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/select"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/xxkc2_imageLayout"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/num"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/coursename"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/coursename"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teacher"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/teachername"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/studentNum"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/stunum"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/maxNum"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/maxnum"
+            android:textColor="@color/colorSkyblue"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/xxkc2_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/colorBlack"
+        android:divider="@color/colorBlack"
+        android:dividerHeight="1dp"
+        android:padding="1dp" />
+
+    <Button
+        android:id="@+id/xxkc2_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/xxkc_buttonback"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp" />
+</RelativeLayout>
